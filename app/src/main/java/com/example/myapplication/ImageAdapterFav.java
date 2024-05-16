@@ -109,7 +109,7 @@ public class ImageAdapterFav extends RecyclerView.Adapter<ImageAdapterFav.ImageV
                     String imageUrl = imageUrls.get(getAdapterPosition());
                     String imageName = getImageNameFromUrl(imageUrl);
                     String imageExt = getImageExtensions(imageUrl);
-                    String directoryName = "wallpaperly";
+                    String directoryName = "WallPaperBN";
                     String fileName = imageName + "." + imageExt;
                     File directory = new File(itemView.getContext().getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), directoryName);
                     if (!directory.exists()) {
@@ -203,7 +203,7 @@ public class ImageAdapterFav extends RecyclerView.Adapter<ImageAdapterFav.ImageV
             }, 5000);
             Intent shareIntent = new Intent(Intent.ACTION_SEND);
             shareIntent.setType("image/*");
-            shareIntent.putExtra(Intent.EXTRA_TEXT, "View The Source Code at https://github.com/TharunDharmaraj/Wallpaperly");
+            shareIntent.putExtra(Intent.EXTRA_TEXT, "View The Source Code at https://github.com/TharunDharmaraj/WallPaperBN");
 
             Uri imageUri = FileProvider.getUriForFile(
                     v.getContext(),

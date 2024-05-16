@@ -99,7 +99,7 @@ public class ImageViewActivityFav extends AppCompatActivity {
             String imageName = getIntent().getStringExtra("image_name");
             String imageExt = getIntent().getStringExtra("image_ext");
 
-            String directoryName = "wallpaperly";
+            String directoryName = "WallPaperBN";
             String fileName = imageName + "." + imageExt;
 
             File directory = new File(getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), directoryName);
@@ -177,7 +177,7 @@ public class ImageViewActivityFav extends AppCompatActivity {
             String imageUrl = getIntent().getStringExtra("image_url");
             String imageName = getIntent().getStringExtra("image_name");
             String imageExt = getIntent().getStringExtra("image_ext");
-            String directoryName = "wallpaperly";
+            String directoryName = "WallPaperBN";
             String fileName = imageName + "." + imageExt;
 
             File directory = new File(getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), directoryName);
@@ -220,7 +220,7 @@ public class ImageViewActivityFav extends AppCompatActivity {
         String imageUrl = getIntent().getStringExtra("image_url");
         String imageName = getIntent().getStringExtra("image_name");
 
-        String directoryName = "wallpaperly";
+        String directoryName = "WallPaperBN";
         String fileName = imageName + ".png";
 
         File directory = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), directoryName);
@@ -317,7 +317,7 @@ public class ImageViewActivityFav extends AppCompatActivity {
 
         // Set the type of the content to "image/png"
         shareIntent.setType("image/*");
-        shareIntent.putExtra(Intent.EXTRA_TEXT, "View The Source Code at https://github.com/TharunDharmaraj/Wallpaperly");
+        shareIntent.putExtra(Intent.EXTRA_TEXT, "View The Source Code at https://github.com/TharunDharmaraj/WallPaperBN");
         System.out.println(imageFile);
         // Get the URI of the image file using FileProvider
         Uri imageUri = FileProvider.getUriForFile(
