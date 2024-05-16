@@ -68,7 +68,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
     }
 
     private void toSourceCode() {
-        String url = "https://github.com/TharunDharmaraj/Wallpaperly-1k-HD-Android-Wallpapers";
+        String url = "https://github.com/phucnhan/WallPaperBN";
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(url));
         startActivity(i);
@@ -190,7 +190,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
         dialog.show();
     }
 
-    //    https://github.com/TharunDharmaraj/Wallpaperly-1k-HD-Android-Wallpapers
+    //    https://github.com/phucnhan/WallPaperBN
     private void deleteDirectory(File fileOrDirectory) {
         if (fileOrDirectory.isDirectory()) {
             File[] files = fileOrDirectory.listFiles();
